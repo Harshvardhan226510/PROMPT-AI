@@ -23,3 +23,15 @@ PROMPT-AI is a full-stack Generative AI platform engineered to optimize, expand,
 ├── Dockerfile           # Automated multi-layer container assembly build configurations
 ├── requirements.txt     # Virtual environment package manifestation
 └── README.md            # Technical portfolio documentation
+```
+
+## ⚙️ Local Deployment (Instructions for Developers)
+To configure and execute this application container locally, use the following operational parameters:
+- **Clone the Repository:**
+    git clone [https://github.com/Harshvardhan226510/PROMPT-AI.git](https://github.com/Harshvardhan226510/PROMPT-AI.git)
+cd PROMPT-AI
+- **Configure Security Credentials:**
+    export COHERE_API_KEY="your_secure_api_key_here"
+- **Container Build Execution:**
+    docker build -t prompt-ai-engine .
+    docker run -p 7860:7860 --env COHERE_API_KEY=$COHERE_API_KEY prompt-ai-engine
